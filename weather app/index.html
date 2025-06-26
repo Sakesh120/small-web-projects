@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class=" container text-center">
+    <div>
+      <h1 class="mt-4 display-6 fw-bold text-white"> MY Weather Site</h1>
+      <p class="fst-italic text-white fw-bold ">Your direct line to the sky</p>
+    </div>
+
+    <div class="weather-container mx-auto shadow col-md-8">
+      <div class="input-group mb-3">
+        <input type="text" id="input-box" class="form-control" placeholder="Enter the city name" autocomplete="off">
+        <button type="button" class="btn btn-outline-secondary" id="button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div id="error-msg" class="alert alert-danger d-none" role="alert">
+        ❌ City not found , please enter valid city name.
+      </div>
+      <div class="weather-body d-none" id="weather-body">
+        <div class="mb-3">
+          <h3 id="city">City name</h3>
+          <p id="date"></p>
+        </div>
+        <div class="mb-3">
+          <h3 id="temp"></h3>
+          <p id="min-max"></p>
+          <p id="weather"></p>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card info-card">
+              <div class="card-body">
+                <img src="imgs/humidity-icon.jpg" alt="">
+                <p class="mt-2" id="humidity"></p>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4">
+            <div class="card info-card">
+              <div class="card-body">
+                <img src="imgs/icon-wind.jpg" alt="">
+                <p class="mt-2" id="wind"></p>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4">
+            <div class="card info-card">
+              <div class="card-body">
+                <img src="imgs/icon-gauge.png" alt="">
+                <p class="mt-2" id="pressure"></p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+ 
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
+
